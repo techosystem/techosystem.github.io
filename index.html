@@ -1,127 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Emmanuel-Homepage</title>
+    <title>Emmanuel Homepage</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-                body, html {
+        body, html {
             margin: 0;
             padding: 0;
+            background-color: rgb(26, 26, 26);
+            color: aliceblue;
         }
-        
+
         .profile-container {
             position: absolute;
             top: 0;
             left: 0;
             padding: 10px;
         }
-        
-        .profile-container ul {
+
+        .profile-container ul, .media-handles ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
         }
-        
-        .profile-container li {
+
+        .profile-container li, .media-handles li {
             display: inline;
             margin-right: 10px;
         }
-        
-        .profile-container img {
+
+        img {
             vertical-align: middle;
         }
-        
-        .profile-container a {
+
+        a {
             text-decoration: none;
             color: black;
             vertical-align: middle;
         }
 
-        h1{
+        .navbar-brand, .nav > li > a {
+            color: black;
+            font-weight: 550;
+        }
+
+        h1 {
             font-size: 90px;
             text-align: center;
             margin: 50px;
-            color: aliceblue;
         }
-        ul{
-            list-style-type: none;
-            padding: 0;
+
+        .container-fluid.text-center {
+            background-color: rgb(192, 176, 156);
         }
-        li{
-            list-style-type: none;
+
+        .container-fluid h3 {
+            font-weight: bold;
+        }
+
+        .img-circle {
+            border: 5px solid #0f0f0f;
         }
     </style>
 </head>
-    
-<body style="background-color: rgb(26, 26, 26);">
-      <nav class="navbar navbar-default">
+<body>
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" style="color: black; font-weight: 550;" href="index.html">Emmanuel Ugwuabonyi</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="pages/about.html">About</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>           
-          </ul>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Emmanuel Ugwuabonyi</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
         </div>
-      </nav>
+    </nav>
+
     <h1>Emmanuel Ugwuabonyi</h1>
-        <div class="profile-container">
+
+    <div class="profile-container">
         <img src="emma.jpg" alt="Emma" width="100px">
         <ul>
             <li><img src="google_scholar_icon.png" width="30px" alt="Google Scholar"><a href="https://scholar.google.com/citations?user=Emmanuel Ugwuabonyi">Google Scholar</a></li>
             <li><img src="linkedin_icon.png" width="30px" alt="LinkedIn"><a href="https://www.linkedin.com/in/emmanuel-ugwuabonyi-22b767101/">LinkedIn</a></li>
             <li><img src="github_icon.png" width="30px" alt="GitHub"><a href="https://github.com/techosystem">GitHub</a></li>
         </ul>
-       </div>
-    <div style="display: block; text-align: center;">
-        <img src="emma.png" style="border: 5px solid #0f0f0f;" width="290" height="250" class="img-circle" alt="Media handle"> 
-        <li style="color:aliceblue; padding-bottom: 40px; padding-top: 20px;">
-            <ul>Currently a graduate student at UMBC</ul>
-            <ul>ugwuabonyi@umbc.edu</ul>
-            <ul>410-322-1579</ul>
-           <ul>
-    <li>
-        <img src="google_scholar_icon.png" width="50px" alt="Google Scholar">
-        <a href="https://scholar.google.com/citations?user=Emmanuel Ugwuabonyi"> Google Scholar</a>
-    </li>
-</ul>
-<ul>
-    <li>
-        <img src="linkedin_icon.png" width="50px" alt="LinkedIn">
-        <a href="https://www.linkedin.com/in/emmanuel-ugwuabonyi-22b767101/"> LinkedIn</a>
-    </li>
-</ul>
-<ul>
-    <li>
-        <img src="github_icon.png" width="50px" alt="GitHub">
-        <a href="https://github.com/techosystem"> GitHub</a>
-    </li>
-</ul>
+    </div>
 
-        </li>
-    </div>
-    <div class="container-fluid text-center" style="background-color: rgb(192, 176, 156);">
-        <h3 style="font-weight: bold;">My Interests</h3>
-        <div style="font-size: large;" class="row">
-            <div class="col-sm-4">
-                <p class="font-weight-bold"> Playing games</p>                
-                </a>
-            </div>
-            <div class="col-sm-4">
-                <p>Football</p>               
-            </div>
-            <div class="col-sm-4">
-                <p>Travelling</p>
-                
-                </a>
-            </div>
+    <div class="container-fluid text-center">
+        <img src="emma.png" class="img-circle" width="290" height="250" alt="Media handle">
+        <div>
+            <p>Currently a graduate student at UMBC</p>
+            <p>ugwuabonyi@umbc.edu</p>
+            <p>410-322-1579</p>
         </div>
-    </div>
-</body>
-</html>
+        <div class="media-handles">
+            <ul>
+                <li><img src="google_scholar_icon.png" width="50px" alt="Google Scholar"><a href="https://scholar.google.com/citations?user=Emmanuel Ugwuabonyi">Google Scholar</a></li>
+                <li><img src="linkedin_icon.png" width="50px" alt="LinkedIn"><a href="https://www.linkedin.com/in/emmanuel-ugwuabonyi-22b767101/">LinkedIn</a></li>
+                <li><img src="github_icon.png" width="50px" alt="GitHub"><a href="https://github.com/techosystem">GitHub</a></li>
+            </ul>
+        </
