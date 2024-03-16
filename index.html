@@ -42,6 +42,13 @@
         img {
             vertical-align: middle;
         }
+        .img-circle {
+        border-radius: 50%; /* Makes the image round */
+        width: 80%; /* Adjust the width as needed */
+        height: auto; /* Keeps the aspect ratio of the image */
+        display: block; /* Centers the image in its container */
+        margin: 10px auto; /* Adds margin at the top and bottom, auto centers it horizontally */
+        }
 
         a {
             text-decoration: none;
@@ -100,7 +107,7 @@
     </nav>
 
     <div class="leftpane">
-        <img src="emma.jpeg" alt="Emma" width="100%" height="auto">
+        <img src="emma.jpeg" alt="Emma" class = "img-circle">
         <a href="https://scholar.google.com/citations?user=Emmanuel Ugwuabonyi"><img src="google_scholar.png" alt="Google Scholar" width="20px"></a>
         <a href="https://www.linkedin.com/in/emmanuel-ugwuabonyi-22b767101/"><img src="linkedln.png" alt="Linkedln" width="20px"></a>
         <a href="https://github.com/techosystem"><img src="github_icon.png" alt="GitHub" width="20px"></a>
