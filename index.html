@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Emmanuel Homepage</title>
+    <title>Emmanuel's Homepage</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         body, html {
             margin: 0;
             padding: 0;
-            background-color: rgb(255, 255, 230;
+            background-color: rgb(255, 255, 230);
             color: aliceblue;
         }
 
-    
-            .leftpane {
-                width: 25%;
-                height: 100vh;
-                background-color: rosybrown;
+        .leftpane {
+            float: left;
+            width: 25%;
+            height: 100vh;
+            background-color: rosybrown;
+        }
+
+        .middlepane {
+            float: left;
+            width: 75%;
+            height: 100vh;
+            background-color: royalblue;
+            overflow: auto;
         }
 
         .leftpane ul, .media-handles ul {
@@ -27,15 +33,10 @@
             margin: 0;
             padding: 0;
         }
-        .middlepane {
-        width: 50%;
-        height: 100vh;
-       background-color: royalblue;
-       }
 
         .leftpane li, .media-handles li {
-            display: inline;
-            margin-right: 10px;
+            display: block;
+            margin-bottom: 10px;
         }
 
         img {
@@ -55,8 +56,8 @@
 
         p {
             font-size: 12px;
-            font-color: black;
-            margin: 50px;
+            color: black;
+            margin: 20px;
         }
 
         .container-fluid.text-center {
@@ -69,6 +70,10 @@
 
         .img-circle {
             border: 5px solid #0f0f0f;
+        }
+
+        h2 {
+            color: aliceblue;
         }
     </style>
 </head>
@@ -87,29 +92,26 @@
     </nav>
 
     <div class="leftpane">
-        <img src="emma.jpg" alt="Emma" width="200px" height="200px">
+        <img src="emma.jpg" alt="Emma" width="100%" height="auto">
         <ul>
-            <li><a href="https://scholar.google.com/citations?user=Emmanuel Ugwuabonyi"> <img src="google_scholar.png" width="30px" alt="Google Scholar"></a></li>
-            <li><a href="https://www.linkedin.com/in/emmanuel-ugwuabonyi-22b767101/"> <img src="linkedln.png" width="30px" alt="LinkedIn"></a></li>
-            <li><a href="https://github.com/techosystem"> <img src="github_icon.png" width="30px" alt="GitHub"></a></li>
-            <li><a href="https://drive.google.com/file/d/1iUvvMSSNuhYOi04QEdIKEFms42WQ-_na/view"> <img src="cv_icon.png" width="30px" alt="CV"></a></li>
+            <li><a href="https://scholar.google.com/citations?user=Emmanuel Ugwuabonyi"><img src="google_scholar.png" alt="Google Scholar"></a></li>
+            <li><a href="https://www.linkedin.com/in/emmanuel-ugwuabonyi-22b767101/"><img src="linkedin_icon.png" alt="LinkedIn"></a></li>
+            <li><a href="https://github.com/techosystem"><img src="github_icon.png" alt="GitHub"></a></li>
+            <li><a href="https://drive.google.com/file/d/1iUvvMSSNuhYOi04QEdIKEFms42WQ-_na/view"><img src="cv_icon.png" alt="CV"></a></li>
         </ul>
     </div>
-    <div class="middlepane">
-    <h2> BIO </h2>
-    <p> I am currently pursuing PhD in Computer Science at the University of Maryland, Baltimore County (UMBC). I am advised by <a href="https://karuna.informationsystems.umbc.edu/">Prof. Karuna Joshi</a> and I work at reliable computer vision research in the 
-       <a href="https://knacc.umbc.edu/">The Knowledge, Analytics, Cognitive and Cloud Computing (KnACC) lab </a> </p>
-    <p> My primary area of research interest is Artificial Intelligence and Machine learning.  My work focuses on combining computer vision with natural language processing. Currently, I'm researching a new 
-        algorithm to better medical image segmentation using these technologies.
-    <p> I have a wide range of experience in both the industry and in academic settings. In my role as a Data Scientist at Meteolytix GmbH in Germany, I developed my ability to find important information 
-        within complex sets of data. Also, working as an IT Analyst at Enugu State University of Science and Technology gave me a chance to grow and use my technical skills in an exciting and challenging educational setting.. My academic journey is marked by a strong foundation in computer science and data science. I hold a Master of Science in Computer Science from the University of Lagos and a Master of 
-        Science in Data Science from Kiel University of Applied Sciences. Furthermore, I completed my undergraduate education with a Bachelor of Engineering from Enugu State University of Science and 
-        Technology, Enugu, which laid the groundwork for my subsequent professional and academic achievements.</p>
-
+    <div class="middlepane">    
+        <h2>BIO</h2>
+        <p>I am currently pursuing a PhD in Computer Science at the University of Maryland, Baltimore County (UMBC), under the guidance of Prof. Karuna Joshi at the Knowledge, Analytics, Cognitive and Cloud Computing (KnACC) lab.</p>
+        <p>My primary area of research interest is Artificial Intelligence and Machine Learning, focusing on combining computer vision with natural language processing. Currently, I'm working on developing an algorithm to enhance medical image segmentation using these technologies.</p>
+        <p>With extensive experience in both industry and academia, I have honed my skills as a Data Scientist at Meteolytix GmbH in Germany and as an IT Analyst at Enugu State University of Science and Technology. My academic qualifications include a Master of Science in Computer Science from the University of Lagos, a Master of Science in Data Science from Kiel University of Applied Sciences, and a Bachelor of Engineering from Enugu State University of Science and Technology, Enugu.</p>
     </div>
-        
-    
- 
-</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+  
 
         
