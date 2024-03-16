@@ -15,20 +15,25 @@
             color: aliceblue;
         }
 
-        .profile-container {
-            position: absolute;
-            top: 3;
-            left: 3;
-            padding: 10px;
+    
+            .leftpane {
+                width: 25%;
+                height: 100vh;
+                background-color: rosybrown;
         }
 
-        .profile-container ul, .media-handles ul {
+        .leftpane ul, .media-handles ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
         }
+        .middlepane {
+        width: 50%;
+        height: 100vh;
+       background-color: royalblue;
+       }
 
-        .profile-container li, .media-handles li {
+        .leftpane li, .media-handles li {
             display: inline;
             margin-right: 10px;
         }
@@ -71,7 +76,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">Emmanuel Ugwuabonyi</a>
+                <a class="navbar-brand" href="index.html"></a>
             </div>
             <ul class="nav navbar-nav">
                 <li class="active"><a href="index.html">Home</a></li>
@@ -81,9 +86,7 @@
         </div>
     </nav>
 
-    <h1>Emmanuel Ugwuabonyi</h1>
-
-    <div class="profile-container">
+    <div class="leftpane">
         <img src="emma.jpg" alt="Emma" width="200px" height="200px">
         <ul>
             <li><a href="https://scholar.google.com/citations?user=Emmanuel Ugwuabonyi"> <img src="google_scholar.png" width="30px" alt="Google Scholar"></a></li>
@@ -92,12 +95,21 @@
             <li><a href="https://drive.google.com/file/d/1iUvvMSSNuhYOi04QEdIKEFms42WQ-_na/view"> <img src="cv_icon.png" width="30px" alt="CV"></a></li>
         </ul>
     </div>
+    <div class="middlepane">
+    <h2> BIO </h2>
+    <p> I am currently pursuing PhD in Computer Science at the University of Maryland, Baltimore County (UMBC). I am advised by <a href="https://karuna.informationsystems.umbc.edu/">Prof. Karuna Joshi</a> and I work at reliable computer vision research in the 
+       <a href="https://knacc.umbc.edu/">The Knowledge, Analytics, Cognitive and Cloud Computing (KnACC) lab </a> </p>
+    <p> My primary area of research interest is Artificial Intelligence and Machine learning.  My work focuses on combining computer vision with natural language processing. Currently, I'm researching a new 
+        algorithm to better medical image segmentation using these technologies.
+    <p> I have a wide range of experience in both the industry and in academic settings. In my role as a Data Scientist at Meteolytix GmbH in Germany, I developed my ability to find important information 
+        within complex sets of data. Also, working as an IT Analyst at Enugu State University of Science and Technology gave me a chance to grow and use my technical skills in an exciting and challenging educational setting.. My academic journey is marked by a strong foundation in computer science and data science. I hold a Master of Science in Computer Science from the University of Lagos and a Master of 
+        Science in Data Science from Kiel University of Applied Sciences. Furthermore, I completed my undergraduate education with a Bachelor of Engineering from Enugu State University of Science and 
+        Technology, Enugu, which laid the groundwork for my subsequent professional and academic achievements.</p>
 
-    <div class="container-fluid text-center">
-        <img src="emma.png" class="img-circle" width="290" height="250" alt="Media handle">
-        <div>
-            <p>Currently a graduate student at UMBC</p>
-            <p>ugwuabonyi@umbc.edu</p>
-            <p>410-322-1579</p>
-        </div>
+    </div>
+        
+    
+ 
+</div>
+
         
